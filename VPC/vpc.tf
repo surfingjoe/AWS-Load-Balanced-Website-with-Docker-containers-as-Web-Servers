@@ -9,9 +9,9 @@ terraform {
 # ----------  Store Terraform Backend in S3 Bucket --------
 terraform {
   backend "s3" {
-    bucket = "surfingjoes-terraform-states"
+    bucket = "Your Bucket Name"
     key    = "terraform.tfstate"
-    region = "us-west-1"
+    region = "Your Region"
   }
 }
 

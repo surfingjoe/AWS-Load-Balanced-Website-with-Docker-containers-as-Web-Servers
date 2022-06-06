@@ -18,17 +18,17 @@ variable "environment" {
 
 variable "aws_key_name" {
   type    = string
-  default = "Mykey"
+  default = "Your EC2 Key name"
 }
 
 variable "your_name" {
   description = "Your Name?"
   type        = string
-  default     = "Joe"
+  default     = "your name"
 }
 
 variable "ssh_location" {
   type        = string
   description = "My Public IP Address"
-  default     = "172.89.66.78/32"
+  default     = "Your public IP address"
 }

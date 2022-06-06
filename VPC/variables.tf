@@ -1,10 +1,10 @@
 variable "aws_key_name" {
   type    = string
-  default = "Mykey"
+  default = "Your key name"
 }
 variable "region" {
   type    = string
-  default = "us-west-1"
+  default = "Your region"
 }
 variable "environment" {
   description = "User selects environment"
@@ -14,7 +14,7 @@ variable "environment" {
 variable "your_name" {
   description = "Your Name?"
   type        = string
-  default     = "Joe"
+  default     = "Your name"
 }
 variable "av-zone1" {
   type    = string
@@ -27,11 +27,7 @@ variable "av-zone2" {
 variable "ssh_location" {
   type        = string
   description = "My Public IP Address"
-  default     = "172.89.66.78/32"
-}
-variable "key" {
-  type    = string
-  default = "JoesKey"
+  default     = "Your public IP address"
 }
 variable "vpc_cidr" {
   type    = string

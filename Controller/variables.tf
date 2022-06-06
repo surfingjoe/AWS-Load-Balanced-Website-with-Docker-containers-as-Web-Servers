@@ -1,11 +1,11 @@
 variable "aws_region" {
   type    = string
-  default = "us-west-1"
+  default = "Your region"
 }
 
 variable "key" {
   type    = string
-  default = "Mykey" #be sure to update with the name of your EC2 Key pair for your region
+  default = "Your EC2 Key name"
 }
 variable "instance_type" {
   description = "Type of EC2 instance to use"
@@ -20,5 +20,5 @@ variable "environment" {
 variable "your_name" {
   description = "Your Name?"
   type        = string
-  default     = "Joe"
+  default     = "Your name"
 }

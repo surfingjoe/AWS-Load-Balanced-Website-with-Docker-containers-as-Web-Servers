@@ -10,9 +10,9 @@ terraform {
 data "terraform_remote_state" "vpc" {
   backend = "s3"
   config = {
-    bucket = "surfingjoes-terraform-states"
+    bucket = "Your S3 bucket name"
     key    = "terraform.tfstate"
-    region = "us-west-1"
+    region = "your region"
   }
 }
 
