@@ -36,7 +36,7 @@ The code found here is a part of my blog on using "Infrastructure as Code" with 
  Clone this repository
 
 * Be sure to change the S3 Bucket name for Terraform remote state
-* Be sure to change the variables appropriate to your deploymet
+* Be sure to change the variables appropriate to your deployment
 * In your terminal, goto the VPC folder and execute the following commands:
 
    1. `Terraform init`
