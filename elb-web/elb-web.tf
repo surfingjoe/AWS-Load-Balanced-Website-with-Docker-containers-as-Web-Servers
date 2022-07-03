@@ -34,7 +34,7 @@ data "aws_ami" "amazon_linux" {
     values = ["amzn2-ami-hvm-*-x86_64-gp2"]
   }
 }
-# ------------- Creat the Load Balancer ---------------------------------
+# ------------- Create the Load Balancer ---------------------------------
 resource "aws_elb" "elb" {
 name= "test-elb"
 subnets=[data.terraform_remote_state.vpc.outputs.public_subnet_1,data.terraform_remote_state.vpc.outputs.public_subnet_2]
@@ -66,7 +66,7 @@ tags = {
   Owner         = "${var.your_name}"
   }
 }
-# ------------- Creat the Docker Web Servers----------------------------
+# ------------- Create the Docker Web Servers----------------------------
 resource "aws_instance" "docker1" {
   ami = data.aws_ami.amazon_linux.id
 
